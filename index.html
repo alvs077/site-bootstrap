@@ -30,11 +30,26 @@
             width: 50px;
             height: auto;
         }
+        .banner {
+            background-image: url("imagens/Texto\ do\ seu\ parágrafo.png"); /* Substitua pelo caminho da sua imagem */
+            background-size: cover;
+            background-position: center;
+            height: 700px; /* Ajuste a altura conforme necessário */
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-size: 24px;
+            font-weight: bold;
+        }
         .container {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             background-color: rgb(44, 44, 44);
+            padding: 20px 0;
         }
         .item {
             width: 300px;
@@ -98,6 +113,12 @@
             margin: 0 10px;
             text-decoration: none;
         }
+        .about {
+            padding: 40px 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -113,10 +134,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto me-auto">
         <li class="nav-item">
-          <a class="nav-link text-white" href="cadastro.html" target="_blank">Entrar/Criar sua conta</a>
+          <a class="nav-link text-white" href="#banner">inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="carrinho.html" target="_blank">Carrinho de Compras <span class="badge bg-secondary">0</span></a>
+          <a class="nav-link text-white" href="#produtos">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#quem-somos">Quem Somos</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -127,29 +151,32 @@
   </div>
 </nav>
 
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imagens/WhatsApp Image 2024-11-09 at 19.13.45.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagens/0584df6a-8f7d-4630-a79b-5119319c2ef6.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagens/WhatsApp Image 2024-11-09 at 19.08.22.jpeg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div id="banner" class="banner">
 </div>
 
-<div class="container">
+<div id="produtos" class="container">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/WhatsApp Image 2024-11-09 at 19.13.45.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/0584df6a-8f7d-4630-a79b-5119319c2ef6.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/WhatsApp Image 2024-11-09 at 19.08.22.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
   <div class="item">
       <img src="imagens/Captura de tela 2024-11-09 194713.png" alt="Camisa Barcelona 24/25 Home I">
       <div class="info">
@@ -180,11 +207,6 @@
           <p class="shipping">FRETE GRÁTIS</p>
       </div>
   </div>
-</div>
-
-<div class="novidade-title">NOVIDADES</div>
-
-<div class="container">
   <div class="item">
       <img src="imagens/Captura de tela 2024-11-09 202214.png" alt="Jaqueta Bobojaco Brasil - Preto">
       <div class="info">
@@ -217,6 +239,11 @@
   </div>
 </div>
 
+<div id="quem-somos" class="about">
+  <h2>Quem Somos</h2>
+  <p>A nossa loja foi criada com o propósito de oferecer produtos esportivos de alta qualidade para todos os apaixonados por esporte. Desde a nossa fundação, temos nos dedicado a trazer o melhor em camisas de time e acessórios esportivos, sempre com foco na satisfação do cliente. Nosso objetivo é ser a referência no mercado de material esportivo, oferecendo produtos que atendam às necessidades de todos os torcedores e atletas.</p>
+</div>
+
 <footer>
   <p>Meios de Pagamento: Parcelamos em até 12x sem juros</p>
   <p>Frete grátis para todo o Brasil</p>
@@ -225,7 +252,6 @@
       <img src="imagens/gratis-png-logo-de-visa-visa-electron-tarjeta-de-credito-tarjeta-de-debito-cajero-automatico-logo-de-visa-removebg-preview.png" alt="MasterCard" style="width: 50px; margin: 0 5px;">
       <img src="imagens/R__1_-removebg-preview.png" alt="American Express" style="width: 50px; margin: 0 5px;">
       <img src="imagens/R-removebg-preview.png" alt="Elo" style="width: 50px; margin: 0 5px;">
-      
   </div>
   <p>Site 100% seguro</p>
   <p>Desenvolvido por Rodrigo Alves, estudante de Sistemas de Informação da FTC</p>
