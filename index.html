@@ -24,7 +24,7 @@
             margin-left: 15px;
         }
         .form-control {
-            width: 200px;
+            width: 100%;
         }
         .navbar-brand img {
             width: 50px;
@@ -242,6 +242,25 @@
 <div id="quem-somos" class="about">
   <h2>Quem Somos</h2>
   <p>A nossa loja foi criada com o propósito de oferecer produtos esportivos de alta qualidade para todos os apaixonados por esporte. Desde a nossa fundação, temos nos dedicado a trazer o melhor em camisas de time e acessórios esportivos, sempre com foco na satisfação do cliente. Nosso objetivo é ser a referência no mercado de material esportivo, oferecendo produtos que atendam às necessidades de todos os torcedores e atletas.</p>
+</div>
+
+<div id="contato" class="about">
+  <h2>Contato</h2>
+  <form action="#" method="post" class="mx-auto" style="max-width: 800px;">
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="nome" name="nome" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="mensagem" class="form-label">Mensagem</label>
+      <textarea class="form-control" id="mensagem" name="mensagem" rows="8" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
 </div>
 
 <footer>
